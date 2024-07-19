@@ -75,6 +75,72 @@ p {
     max-width: 100dvw;
     padding-top: 3rem;
     overflow: hidden;
+    position: relative;
+    color: var(--clrTheme100);
+}
+
+#american::before {
+    background-image: url(images/2_1.png);
+    background-size: cover;
+    content: "";
+    position: absolute;
+    inset: 0;
+    opacity: .259;
+}
+
+#foresters::before {
+    background-image: url(images/3_1.png);
+    background-size: cover;
+    content: "";
+    position: absolute;
+    inset: 0;
+    opacity: .259;
+
+}
+#illinois::before {
+    background-image: url(images/3.png);
+    background-size: cover;
+    content: "";
+    position: absolute;
+    inset: 0;
+    opacity: .259;
+
+}
+#aig::before {
+    background-image: url(images/6.png);
+    background-size: cover;
+    content: "";
+    position: absolute;
+    inset: 0;
+    opacity: .259;
+
+}
+#aetna::before {
+    background-image: url(images/7.png);
+    background-size: cover;
+    content: "";
+    position: absolute;
+    inset: 0;
+    opacity: .259;
+
+}
+#transamerica::before {
+    background-image: url(images/1_1.png);
+    background-size: cover;
+    content: "";
+    position: absolute;
+    inset: 0;
+    opacity: .259;
+
+}
+#contact::before {
+    background-image: url(images/5.png);
+    background-size: cover;
+    content: "";
+    position: absolute;
+    inset: 0;
+    opacity: .259;
+
 }
 
 #contact {
@@ -82,7 +148,7 @@ p {
     max-width: 100dvw;
     padding-top: 5rem;
     overflow: hidden;
-    
+    position: relative;
 }
 /* 
 @media screen and (max-screen: 500px) {
@@ -126,6 +192,9 @@ p {
 .bg100 {
     background: linear-gradient(45deg, 
     var(--clrTheme400) 30%, var(--clrTheme900));  
+}
+.blackBack {
+    background: rgb(51, 46, 85);
 }
 
 .split {
@@ -609,7 +678,7 @@ iframe {
 
 
 footer {  
-    color: white; 
+    color: var(--clrMain100); 
     padding: 1rem 0; 
     text-align: center; 
     min-height: 10dvh;
