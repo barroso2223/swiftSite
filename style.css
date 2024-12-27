@@ -8,9 +8,29 @@
     --clrMain100: white;
     --clrMain900: black;
 
-    --ffTheme: "Cinzel Decorative", serif;
+    --americanColor: rgb(46, 53, 87);
+    --foresterscolor: rgb(2, 124, 137);
+    --illinoiscolor: rgb(38, 106, 103);
+    --aigcolor: rgb(9, 34, 124);
+    --transamericacolor: rgb(232, 51, 51);
+    --aetnacolor: rgb(47, 7, 64);
+
+    --ffTheme: "Poppins", serif;
     --ffAccent: Arial, Helvetica, sans-serif; 
+
+    --americanBGImage: ("../swiftSite/images/bgImage.png");
+    --forestersBGImage: ("/images/bgImage2.png");
+    --illinoisBGImage: ("/images/bgImage3.png");
+    --aigBGImage: ("/images/bgImage4.png");
+    --transamericaBGImage: ("/images/bgImage5.png");
+    --aetnaBGImage: ("/images/bgImage6.png");
 }
+
+html {
+    scroll-behavior: smooth;
+    width: 100dvw;
+}
+
 
 *,
 *::before,
@@ -21,10 +41,13 @@
 body {
     font-family: var(--ffTheme);
     font-weight: 400;
-    font-size: 1rem;
+    font-size: clamp(.75rem, 4vw, 1.25rem);
     line-height: 1.6;
     background: var(--clrMain900);
     color: var(--clrMain100);
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 body,
@@ -34,6 +57,27 @@ h3,
 p { 
     margin: 0; 
 } 
+
+h1,
+h2 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 600;
+    font-family: var(--ffTheme);
+}
+
+h3,
+h4 {
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    font-weight: 500;
+    font-family: var(--ffTheme);
+}
+
+p,
+span,
+a {
+    font-size: clamp(.5rem, 3vw, 1.25rem);
+    font-family: var(--ffTheme);
+}
 
 h1,
 h2,
@@ -49,763 +93,469 @@ a {
     font-family: var(--ffAccent);
 }
 
-h2, 
-h3,
-p {
-    margin-bottom: 1em;
+a {
+    color: var(--clrMain100);
+    text-decoration: none;
+    list-style: none;
 }
 
-.card {
-    border-radius: .5rem;
-    box-shadow: 2px 2px 2px var(--clrMain100);
-}
-
-.textContainer {
-    max-width: 700px;
-    place-items: center;
-    place-content: center;
-    justify-content: center;
-}
-
-#homeVideo {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
-}
-
-.sliderContainer {
-    width: 90%;
-    max-width: 275px;
-    margin-inline: auto;
-    position: relative;
-    height: 150px;
-    margin-top: 3rem;
-    overflow: hidden;
+#home {
+    width: 100dvw;
+    height: auto;
     display: flex;
     flex-direction: column;
+    padding-top: 50px;
+    margin-inline: auto;
 }
 
-.sliderCardContainer {
-    position: absolute;
-}
-
-.sliderCard {
-    width: 275px;
+header {
+    width: 100dvw;
     height: 150px;
-    border-radius: .5rem;
-    box-shadow: 2px 2px 2px var(--clrTheme400);
-    display: inline-flex;
-    transition: .5s;
-    overflow: hidden;
 }
-
-.sliderCard img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.sliderContainer div {
-    white-space: nowrap;
-    animation: slide var(--t) linear infinite;
-    animation-delay: calc(var(--t) * -1);
-}
-
-.sliderContainer div:nth-child(2) {
-    animation: slide2 var(--t) linear infinite;
-    animation-delay: calc(var(--t) / -2);
-}
-
-@keyframes slide
-{
-    0%
-    {
-        transform: translateY(100%);
-    }
-    100%
-    {
-     
-        transform: translateY(-100%);   
-    }
-}
-@keyframes slide2
-{
-    0%
-    {
-        transform: translateY(0);
-    }
-    100%
-    {
-     
-        transform: translateY(-200%);   
-    }
-}
-
-#american,
-#foresters,
-#illinois,
-#aig,
-#aetna,
-#transamerica {
-    min-height: 100dvh;
-    max-width: 100dvw;
-    padding-top: 3rem;
-    overflow: hidden;
-    position: relative;
-    color: var(--clrTheme100);
-}
-
-#american {
-    background: rgb(255, 184, 28);
-    z-index: 99;
-    color: rgb(15, 53, 87);
-}
-
-#american::before {
-    background: rgb(255, 184, 28);
-    background-image: url(images/2_1.png);
-    background-size: cover;
-    content: "";
-    position: absolute;
-    inset: 0;
-    opacity: .2;
-    z-index: -2;
-}
-
-#foresters {
-    background: rgb(94, 39, 80);
-    color: rgb(2, 124, 137);
-    z-index: 98;
-
-}
-
-#foresters::before {
-    background-image: url(images/3_1.png);
-    background-size: cover;
-    content: "";
-    position: absolute;
-    inset: 0;
-    opacity: .2;
-    z-index: -1;
-
-}
-#illinois {
-    background: rgb(0, 84, 80);
-    color: rgb(13, 13, 13);
-    z-index: 97;
-}
-
-#illinois::before {
-    background-image: url(images/3.png);
-    background-size: cover;
-    content: "";
-    position: absolute;
-    inset: 0;
-    opacity: .2;
-    z-index: -1;
-
-}
-#aig {
-    background: rgb(0, 24, 113);
-    color: var(--clrMain100);
-    z-index: 1;
-
-}
-#aig::before {
-    background-image: url(images/6.png);
-    background-size: cover;
-    content: "";
-    position: absolute;
-    inset: 0;
-    opacity: .2;
-    z-index: -1;
-
-}
-
-#transamerica {
-    background: var(--clrMain900);
-    color: rgb(238, 0, 0);
-    z-index: 5;
-
-}
-#transamerica::before {
-    background-image: url(images/1_1.png);
-    background-size: cover;
-    content: "";
-    position: absolute;
-    inset: 0;
-    opacity: .4;
-    z-index: -3;
-
-}
-#aetna {
-    background: rgb(125, 63, 152);
-    color: var(--clrMain100);
-    z-index: 97;
-
-}
-#aetna::before {
-    background-image: url(images/7.png);
-    background-size: cover;
-    content: "";
-    position: absolute;
-    inset: 0;
-    opacity: .2;
-    z-index: -1;
-
-}
-
-#contact::before {
-    background-image: url(images/5.png);
-    background-size: cover;
-    content: "";
-    position: absolute;
-    inset: 0;
-    opacity: .38;
-    z-index: -4;
-}
-
-#contact {
-    min-height: 85dvh;
-    max-width: 100dvw;
-    padding-top: 5rem;
-    background: var(--clrMain900);
-    overflow: hidden;
-    position: relative;
-    color: var(--clrTheme100);
-    z-index: 90;
-}
-/* 
-@media screen and (max-screen: 500px) {
-    #home,
-    #about,
-    #services,
-    #testimonials,
-    #gallery,
-    #contact {
-        min-height: 100dvh;
-        max-width: 100dvw;
-        padding-top: 5rem;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        place-content: center;
-        place-items: center;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-        font-size: .75rem;
-    }
-
-} */
-
-
-.img {
-    display: block;
-    max-width: 100dvw;
-    height: 100%;
-    object-fit: cover;
-    place-content: center;
-    place-items: center;
-}
-
-.bg900 {
-    background: linear-gradient(120deg, 
-        var(--clrMain900), var(--clrTheme900), var(--clrTheme400)); 
-}
-
-.bg100 {
-    background: linear-gradient(45deg, 
-    var(--clrTheme400) 30%, var(--clrTheme900));  
-}
-.blackBack {
-    background: rgb(51, 46, 85);
-}
-
-.split {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-}
-
-.split > * + * {
-    margin-left: 2em;
-}
-
-header { 
-    background: var(--cltThemeOmbre); 
-    color: var(--clrMain100); 
-    max-width: 100dvw;
-    text-align: center;
-    text-decoration: none;
-} 
 
 nav {
-    position: fixed;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 100dvw;
-    height: 10dvh;
-    background: linear-gradient(to left, 
-        var(--clrTheme900), var(--clrTheme100), var(--clrTheme900)); 
-    z-index: 1000000;
+    position: relative;
 }
 
-/* nav ul {
-    display: none;
-} */
+.navBar {
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background: rgb(0, 0, 0, .8);
+    box-shadow: 5px 5px 20px white;
+    backdrop-filter: blur(15px);
+    padding: 0 1rem;
+    top: 0;
+    z-index: 1000;
+}
 
-.logo {
-    max-width: 5rem;
-    padding-top: 1rem;
+.logoContainerNav {
+    height: auto;
+    width: 200px;
 }
 
 .logo img {
     width: 100%;
+    height: 100%;
 }
 
-@media screen and (max-width: 850px) {
-    nav {
-        position: fixed;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        place-items: center;
-        align-content: center;
-        width: 100dvw;
-        min-height: 13dvh;
-        padding-right: 6.5rem;
-        margin-bottom: 4rem
-        gap: .5rem;
-        background: linear-gradient(to left, 
-            var(--clrTheme100) 30%, var(--clrTheme900)); 
-        z-index: 111111;
-    }
-
-    .logo {
-        max-width: 5rem;
-        margin-top: 1rem;
-        margin-bottom: 2rem;
-        margin: auto;
-    }
-
-    .logo img {
-        width: 100%;
-    }
-
-    nav li, nav .faFonts {
-        display: none;
-    }
-
-    #home .logoContainer {
-        display: none;
-    }
-
-    .textContainer {
-        text-align: center;
-        max-width: 100dvw;
-        min-height: 50dvh;
-        justify-content: center;
-        margin: 0 auto;
-        font-size: .75rem;
-    }
-
-    .aboutImage {
-        justify-content: center;
-        margin-bottom: 2rem;
-        margin-right: 1rem;
-    }
-    
-    #american,
-    #foresters,
-    #illinois,
-    #aig,
-    #aetna,
-    #transamerica {
-        min-height: 100dvh;
-        max-width: 100dvw;
-        padding-top: 1rem;
-        overflow: hidden;
-        margin: 0 auto;
-    }
+.navBar ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    font-size: clamp(.5rem, 3vw, 1rem);
+    margin-inline: auto;
 }
 
-/* @media screen and (max-width: 850) {
-    nav{
-       display: none; 
-    }
-    #hamburgerNav{
-        height: 15vh;
-        font-size: 1rem;
-        display: flex;
-    }
-
-    .hamburgerMenu{
-      position: relative;
-      display: inline-block;
-    }
-    
-    .hamburgerIcon{
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      height: 24px;
-      width: 30px;
-      cursor: pointer;
-    }
-    
-    .hamburgerIcon span{
-      width: 100%;
-      height: 2px;
-      background-color: white;
-      transition: all 0.3 ease-in-out;
-    }
-    
-    .menuLinks{
-      position: absolute;
-      top: 100%;
-      right: 0;
-      background-color: white;
-      opacity: 50%;
-      width: fit-content;
-      max-height: 0;
-      overflow: hidden;
-      transition: all 0.3 ease-in-out;
-    }
-    
-    .menuLinks a{
-      display: block;
-      padding: 10px;
-      text-align: center;
-      font-size: 1rem;
-      color: pink;
-      text-decoration: none;
-      transition: all 0.3 ease-in-out;
-    }
-    
-    .menuLinks li{
-      list-style: none;
-    }
-    
-    .menuLinks.open{
-      max-height: 250px;
-    }
-    
-    .menuLinks.open a:hover{
-      text-decoration: underline;
-      color: green;
-    }
-    
-    .hamburgerIcon.open span:first-child {
-      transform: rotate(45deg) translate(10px, 5px);
-    }
-      
-    .hamburgerIcon.open span:nth-child(2) {
-      opacity: 0;
-    }
-    
-    .hamburgerIcon.open span:last-child {
-      transform: rotate(-45deg) translate(10px, -5px);
-    }
-    
-    .hamburgerIcon span:first-child{
-      transform: none;
-    }
-    
-    .hamburgerIcon span:nth-child(2) {
-      opacity: 1;
-    }
-    
-    .hamburgerIcon span:last-child{
-      transform: none;
-    }
-      
-} */
-
-@media screen and (min-width: 850px) {
-    #hamburgerNav {
-        display: none;
-    }
-
-    nav {
-        position: fixed;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding-right: 6rem;
-        width: 100dvw;
-        min-height: 12dvh;
-        gap: 1rem;
-        padding-left: 1rem;
-        background: linear-gradient(to left, 
-        var(--clrTheme100) 30%, var(--clrTheme900)); 
-        z-index: 1000000;
-    }
-    nav * {
-        text-decoration: none;
-        color: var(--clrMain100);
-        font-size: .75rem;
-    }
-
-    .logoContainer {
-        padding-top: 1rem;
-        padding-left: 3rem;
-        top: 0;
-        left: 0;
-    }
-
-    .logo {
-        max-width: 5rem;
-        height: 5rem;
-        object-fit: cover;
-    }
-    
-    .logo img {
-        max-width: 100%;
-        height: 100%;
-        object-fit: cover;
-        margin-top: -1rem;
-    }
-    
-    nav ul { 
-        list-style: none; 
-        padding: 0; 
-        margin: 0; 
-        display: flex; 
-        justify-content: space-around; 
-        flex-wrap: wrap; 
-        text-decoration: none;
-        font-size: 2rem;
-        height: 12dvh;
-        max-width: 100dvw;
-        margin-left: 5rem;
-    } 
-    
-    nav ul li { 
-        margin: 0 10px; 
-        margin-top: .75rem;
-        text-decoration: none;
-        color: var(--clrMain100);
-        display: flex;
-        justify-content: space-around;
-    } 
-    
-    nav .faFonts {
-        padding-left: 1rem;
-        padding-top: .75rem;
-        margin: 0 2rem;
-    }
-
+.navBar a {
+    margin-right: 1rem;
+    text-decoration: none;
+    color: var(--clrTheme400);
+    text-shadow: 5px 5px 25px var(--clrMain100);
 }
 
-section { 
-    padding: 1rem 1rem; 
-    text-align: center; 
-    place-content: center;
-    place-items: center;
-    line-height: 1.6;
-} 
-
-#home {
-    background: var(--clrMain900); 
-    padding-top: 5rem;
+.navBar a:hover {
     color: var(--clrMain100);
-    padding-left: 1rem;
-    padding-right: 1rem;
-    overflow: hidden;
-    position: relative;
 }
 
-#home .logo {
-    max-width: 15rem;
-    min-height: 15rem;
-    place-content: center;
+.faFonts {
+    display: flex;
+}
+
+.faFonts a {
+    text-shadow: none;
+}
+
+.split {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+#homeVideo,
+.homeText {
+    flex: 1;
+    text-align: center;
     justify-content: center;
-    margin: 0 auto;
+    align-items: center;
     overflow: hidden;
+    margin-inline: auto;
+    padding-inline: 1rem;
+    margin-block: 3rem;
 }
 
-#home .logo img {
-    width: 900%;
-    height: 90%;
-    object-fit: cover;
-}
-
-#home .homeText p {
-    font-size: 1rem;
-}
 
 #videoGrid {
+    max-width: 700px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
-    grid-auto-flow: 250px;
-    place-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    place-content: center;
+    align-items: center;
+    margin-inline: auto;
+    gap: 1rem;
 }
 
 .videoCard {
-    max-width: 275px;
-    height: 225px;
-    border-radius: .5rem;
+    width: clamp(250px, 25vw, 300px);
+    height: clamp(150px, 20vw, 300px);
+    margin: 1rem;
     overflow: hidden;
-    margin: .5rem;
-    box-shadow: 2px 2px 2px var(--clrMain100);
+    border-radius: .5rem;
+    box-shadow: 3px 3px 15px var(--clrMain100);
 }
 
 video {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    aspect-ratio: 1;
 }
 
 .homeText {
-    max-width: 40dvw;
-    text-align: center;
-    place-items: center;
+    margin-inline: auto;
+    margin-block: 2rem;
+    padding-right: 3rem;
 }
 
-.homeText p {
-    font-size: 3rem;
-    margin-bottom: -.5rem;
+.logoContainer {
+    margin: auto;
 }
 
-.homeText h1 {
-    font-weight: 300;
-    font-size: 1.25rem;
-    line-height: 1.4;
+.homeText .logoContainer .logo {
+    width: 200px;
+    margin-inline: auto;
 }
 
-section .contactInfo a {
-    margin: 1rem 1rem;
+.logoContainer .logo img {
+    width: 100%;
+    height: 100%;
 }
 
-.serviceGrid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1rem;
-    padding: .25rem;
-}
-
-.serviceGrid a {
-    text-decoration: none;
-    color: var(--clrMain100);
-}
-
-.serviceCard {
-    border: 2px solid var(--clrTheme100);
-    border-radius: .5rem;
-    box-shadow: 2px 2px 2px var(--clrMain100);
-    font-size: .75rem;
-    padding: .25rem;
-}
-
-.serviceCard span {
-    font-size: .5rem;
-}
-
-.card {
+#american,
+#foresters,
+#illinois,
+#aig,
+#transamerica,
+#aetna {
+    width: 100dvw;
+    min-height: 100dvh;
+    margin-inline: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    max-width: 100%;
-    border-radius: 4px;
-    transition: all 500ms;
-    overflow: hidden;
+    padding-block: 2rem;
+    text-align: center;
+    position: relative;
+    box-shadow: 5px 5px 20px var(--clrMain100);
+    z-index: 1;
 }
 
-.card img {
+#american::before {
+    position: absolute;
+    content: "";
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    background: rgb(252, 194, 69);
+    background-image: url("/images/bgImage.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: luminosity;
+    opacity: .5;
+    z-index: -1;
 }
 
-@media screen and (min-width:600px) {
-    .cardTall {
-        grid-row: span 2 / auto;
-    }
+#foresters::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgb(92, 48, 80);
+    background-image: url("/images/bgImage2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: luminosity;
+    opacity: .5;
+    z-index: -1;
+}
 
-    .cardWide {
-        grid-column: span 2 / auto;
-    }
+#illinois::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgb(41, 108, 105);
+    background-image: url("/images/bgImage3.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: luminosity;
+    opacity: .5;
+    z-index: -1;
+}
+
+#aig::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgb(44, 64, 137);
+    background-image: url("/images/bgImage4.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: luminosity;
+    opacity: .5;
+    z-index: -1;
+}
+
+#transamerica::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgb(9, 9, 9);
+    background-image: url("/images/bgImage5.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: luminosity;
+    opacity: .5;
+    z-index: -1;
+}
+
+#aetna::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgb(59, 3, 73);
+    background-image: url("/images/bgImage6.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: luminosity;
+    opacity: .5;
+    z-index: -1;
+}
+
+#contact::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: url("/images/5.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: .4;
+    z-index: -1;
+}
+
+.serviceGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    width: 95%;
+    padding-inline: 2rem;
+    padding-block: 2rem;
+}
+
+.serviceCard {
+    border: 1px solid var(--clrMain100);
+    border-radius: .5rem;
+    width: auto;
+    height: auto;
+    background: transparent;
+    box-shadow: 5px 5px 20px white;
+    backdrop-filter: blur(15px);
+    padding: 2rem;
+    margin: 1rem;
+    color: var(--clrMain100);
+    cursor: pointer;
+}  
+
+#american .serviceCard a:hover {
+    color: var(--americanColor);
+    text-shadow: 2px 2px 10px var(--clrMain100);
+}
+
+#foresters .serviceCard a:hover {
+    color: var(--foresterscolor);
+    text-shadow: 2px 2px 10px var(--clrMain900);
+}
+
+#illinois .serviceCard a:hover {
+    color: var(--illinoiscolor);
+    text-shadow: 2px 2px 10px var(--clrMain100);
+}
+
+#aig .serviceCard a:hover {
+    color: var(--aigcolor);
+    text-shadow: 3px 3px 10px var(--clrMain100);
+}
+
+#transamerica .serviceCard a:hover {
+    color: var(--transamericacolor);
+    text-shadow: 2px 2px 10px var(--clrMain900);
+}
+
+#aetna .serviceCard a:hover {
+    color: var(--aetnacolor);
+    text-shadow: 2px 2px 10px var(--clrMain100);
+}
+
+.serviceCard h3 {
+    font-size: clamp(1rem, 4vw, 1.5rem);
+    font-weight: 200;
+    margin: .5rem;
+}
+
+section h2 {
+    padding: 2rem;
+}
+
+.contactInfo a {
+    padding-inline: 1rem;
+}
+
+.contactInfo a:hover {
+    color: var(--clrMain900);
+    text-shadow: 2px 2px 10px var(--clrMain100);
 }
 
 #contact {
-    font-size: .75rem;
+    width: 100%;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-inline: auto;
 }
 
-#contact p, #contact a {
-    margin: .5rem 3rem;
+#contact p {
+    padding-inline: 2rem;
 }
 
 #contact .form {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-}
-
-.contactInfo > * {
-    text-decoration: none;
-    color: var(--clrMain100);
-    font-size: .75rem;
-    font-weight: 100;
-    padding-top: .5rem;
-}
-
-.form {
-    max-width: 60dvw;
-    min-height: 20dvh;
-    margin: 1rem auto;
-    overflow: hidden;
-}
-
-iframe {
-    max-width: 100%;
-    height: 100%;
-    border: none;
-}
-
-.serviceCard p .link {
-    text-decoration: underline;
-    color: rgb(224, 142, 240);
-    font-style: italic;
-}
-
-.fa-brands,
-.fa-solid,
-.fa-regular,
-.fa-sharp {
-    margin: .125rem;
-    color: var(--clrMain100);
-    text-decoration: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-inline: auto;
+    padding: 2rem;
 }
 
 .formCard {
+    width: clamp(250px, 20vw, 400px);
+    height: auto;
     border-radius: .5rem;
-    box-shadow: 2px 2px 2px var(--clrMain100);
-    max-width: 240px;
-    height: 175px;
+    box-shadow: 3px 3px 15px var(--clrMain100);
     overflow: hidden;
-    margin: 1rem auto;
+    margin: 2rem;
 }
 
-#contact .myImage img {
+#contact .form img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+}
+
+#contactForm video {
+    scale: 1.2;
 }
 
 #contact .faFonts {
-    margin-top: 1rem;
-    text-decoration: none;
+    gap: 1rem;
+    padding: 2rem;
 }
 
+#contact .faFonts a:hover {
+    color: var(--clrTheme400);
+}
 
-footer {  
-    background: var(--cltThemeOmbre);
-    color: var(--clrMain100); 
-    padding: 1rem 0; 
-    text-align: center; 
-    min-height: 10dvh;
-    font-size: .75rem;
-} 
+footer {
+    width: 90%;
+    text-align: center;
+    margin-inline: auto;
+}
 
+@media screen and (max-width: 480px ) {
+    body {
+        width: 100dvw;
+    }
+
+    .navBar {
+        margin-inline: auto;
+    }
+
+    .serviceGrid {
+        margin-inline: auto;
+        width: 95dvw;
+    }
+
+    .serviceCard {
+        width: 100%;
+        margin-inline: auto;
+    }
+
+    .split {
+        width: 95%;
+    }
+
+    .rightVidz,
+    .leftVidz {
+        margin: 0;
+    }
+
+    #contact .form {
+        margin-inline: auto;
+        padding-inline: 3.5rem;
+    }
+}
+
+@media screen and (max-width: 900px ) {
+    .split {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-inline: auto;
+        padding: 0;
+        width: 100%;
+    }
+
+    #videoGrid {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #homeVideo {
+        padding: 0;
+        padding-inline: 2rem;
+        padding-block: 1rem;
+        margin-inline: auto;
+    }
+    
+    .rightVidz {
+        margin-top: 0;
+        margin-right: 5rem;
+    }
+
+    .leftVidz {
+        margin-left: 5rem;
+    }
+
+    .logoContainer {
+        padding-top: 1rem;
+    }
+
+    .homeText {
+        width: 95%;
+        padding-inline: 2rem;
+        text-align: center;
+        order: 0;
+    }
+
+
+
+}
