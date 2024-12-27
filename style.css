@@ -430,6 +430,7 @@ section h2 {
     align-items: center;
     text-align: center;
     margin-inline: auto;
+    position: relative;
 }
 
 #contact p {
@@ -469,6 +470,17 @@ section h2 {
 #contact .faFonts {
     gap: 1rem;
     padding: 2rem;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+}
+
+#contact .faFonts a {
+    width: 50px;
+    height: 50px;
+    margin: auto;
+
 }
 
 #contact .faFonts a:hover {
