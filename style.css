@@ -434,6 +434,11 @@ section h2 {
 
 #contact p {
     padding-inline: 2rem;
+    padding-block: 2rem;
+}
+
+#contact a {
+    font-size: clamp(1rem, 4vw, 1.5rem);
 }
 
 #contact .form {
