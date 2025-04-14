@@ -201,37 +201,38 @@
                     <div class="tab-content">
                         <!-- Life Insurance Form -->
                         <div class="tab-pane fade show active" id="insurance-form">
-                            <form action="https://formsubmit.co/your-insurance-swiftsigningfl@gmail.com" method="POST">
+                            <form action="https://formsubmit.co/swiftsigningfl@gmail.com" method="POST">
+                                <input type="hidden" name="_webhook" value="https://hook.us2.make.com/ygn7re8sutswjk57i6oght54dgb5c6ge">
                                 <input type="hidden" name="_subject" value="New Life Insurance Quote Request">
                                 <input type="hidden" name="_template" value="table">
                                 <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html">
     
                                 <div class="row mb-3">
                                     <div class="col-md-6 mb-3">
-                                        <input type="text" class="form-control" name="First Name" placeholder="First Name" required>
+                                        <input type="text" class="form-control" name="first_name" placeholder="First Name" required>
                                     </div>
                                     <div class="col-md-6 mb-3">
-                                        <input type="text" class="form-control" name="Last Name" placeholder="Last Name" required>
+                                        <input type="text" class="form-control" name="last_name" placeholder="Last Name" required>
                                     </div>
                                 </div>
     
                                 <div class="row mb-3">
                                     <div class="col-md-6 mb-3">
-                                        <input type="email" class="form-control" name="Email" placeholder="Email" required>
+                                        <input type="email" class="form-control" name="email" placeholder="Email" required>
                                     </div>
                                     <div class="col-md-6 mb-3">
-                                        <input type="tel" class="form-control" name="Phone" placeholder="Phone" required>
+                                        <input type="tel" class="form-control" name="phone" placeholder="Phone" required>
                                     </div>
                                 </div>
     
                                 <div class="row mb-3">
                                     <div class="col-md-4 mb-3">
                                         <h6>Date of Birth</h6>
-                                        <input type="date" class="form-control" name="DOB" required>
+                                        <input type="date" class="form-control" name="dob" required>
                                     </div>
                                     <div class="col-md-4 mb-3">
                                         <h6>Legal Gender</h6>
-                                        <select class="form-select" name="Gender" required>
+                                        <select class="form-select" name="gender" required>
                                             <option value="" disabled selected>Gender</option>
                                             <option>Male</option>
                                             <option>Female</option>
@@ -239,14 +240,14 @@
                                     </div>
                                     <div class="col-md-4 mb-3">
                                         <h6>Do you smoke?</h6>
-                                        <select class="form-select" name="Tobacco Use" required>
+                                        <select class="form-select" name="tobacco_use" required>
                                             <option value="" disabled selected>Tobacco Use?</option>
                                             <option>No</option>
                                             <option>Yes</option>
                                         </select>
                                     </div>
                                 </div>
-                                <div class="tab-pane fade show active" id="insurance-form">
+                                <div>
                                     <div class="alert alert-light border-blue text-center mb-4">
                                         <i class="fas fa-map-marker-alt me-2 text-primary"></i>
                                         Servicing: <strong>In-Person</strong> or <strong>Virtual</strong> Throughout Florida
@@ -258,26 +259,27 @@
     
                         <!-- Mobile Notary Form -->
                         <div class="tab-pane fade" id="notary-form">
-                            <form action="https://formsubmit.co/your-notary-swiftsigningfl@gmail.com" method="POST">
+                            <form action="https://formsubmit.co/swiftsigningfl@gmail.com" method="POST">
+                                <input type="hidden" name="_webhook" value="https://hook.us2.make.com/ygn7re8sutswjk57i6oght54dgb5c6ge">
                                 <input type="hidden" name="_subject" value="New Mobile Notary Request">
                                 <input type="hidden" name="_template" value="table">
                                 <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html">
     
                                 <div class="mb-3">
-                                    <input type="text" class="form-control" name="Name" placeholder="Your Name" required>
+                                    <input type="text" class="form-control" name="name" placeholder="Your Name" required>
                                 </div>
                                 
                                 <div class="row mb-3">
                                     <div class="col-md-6 mb-3">
-                                        <input type="email" class="form-control" name="Email" placeholder="Email" required>
+                                        <input type="email" class="form-control" name="email" placeholder="Email" required>
                                     </div>
                                     <div class="col-md-6 mb-3">
-                                        <input type="tel" class="form-control" name="Phone" placeholder="Phone" required>
+                                        <input type="tel" class="form-control" name="phone" placeholder="Phone" required>
                                     </div>
                                 </div>
     
                                 <div class="mb-3">
-                                    <select class="form-select" name="Service Type" required>
+                                    <select class="form-select" name="service_type" required>
                                         <option value="" disabled selected>Service Needed</option>
                                         <option>Real Estate Transactions</option>
                                         <option>General Notary</option>
@@ -285,7 +287,7 @@
                                 </div>
     
                                 <div class="mb-3">
-                                    <input type="text" class="form-control" name="Signing Address" 
+                                    <input type="text" class="form-control" name="signing_address" 
                                            placeholder="Signing Location Address" required>
                                 </div>
                                 <div class="d-flex gap-2 justify-content-center mb-2 flex-wrap">
