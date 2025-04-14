@@ -4,6 +4,7 @@
     <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>Swift Signing Florida</title> 
+    <!-- Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
@@ -11,424 +12,336 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css"> 
 </head> 
 <body> 
-    
-    
-    <section id="home"> 
-
-        <header>
-            <nav>  
-                <div class="navBar">
-                    <div class="logoContainerNav">
-                        <div class="logo">
-                            <img src="images/swiftlogo.png" alt="">
-                        </div>
-                    </div>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#american">American National</a></li>
-                        <li><a href="#foresters">Foresters</a></li>
-                        <li><a href="#illinois">Illinois Mutual</a></li>
-                        <li><a href="#aig">AIG</a></li>
-                        <li><a href="#transamerica">Transamerica</a></li>
-                        <li><a href="#aetna">AETNA</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                        <div class="faFonts">
-                            <a href="https://x.com/dannydevelops82" class="fa-brands fa-x-twitter fa-2x"><span class="label"></span></a>
-                            <a href="www.linkedin.com/in/daniel-barroso82" class="fa-brands fa-linkedin fa-2x"><span class="label"></span></a>
-                            <a href="#" class="fa-brands fa-square-instagram fa-2x"><span class="label"></span></a>
-                            <a href="https://github.com/barroso2223" class="fa-brands fa-square-github fa-2x"><span class="label"></span></a>
-                        </div>
-                    </ul>
-                </div> 
-            </nav> 
-    
-        </header> 
-        <div class="split homeSmall">
-            <div id="homeVideo">
-            
-				<div id="videoGrid">
-					<div class="videoCard leftVidz">
-						<video class="video1 video" autoplay muted loop playsinline>
-							<source src="videos/1.mp4" type="video/mp4">
-						</video> 
-					</div>
-					<div class="videoCard rightVidz">
-						<video class="video2 video" autoplay muted loop playsinline>
-							<source src="videos/2.mp4" type="video/mp4">
-						</video> 
-					</div>
-					<div class="videoCard leftVidz">
-						<video class="video5 video" autoplay muted loop playsinline>
-							<source src="videos/5.mp4" type="video/mp4">
-						</video>
-					</div>
-					<div class="videoCard rightVidz">
-						<video class="video4 video" autoplay muted loop playsinline>
-							<source src="videos/4.mp4" type="video/mp4">
-						</video>
-					</div>
-				</div> 
+    <nav class="navbar navbar-expand-lg fixed-top opacity-hover-off">  
+        <div class="container-fluid flex-row justify-content-between nav-div align-items-center">
+            <div class="align-items-center">
+                <li class="homelogo"><a href="#home"><img src="images/swiftlogo.png" alt=""></a></li>
             </div>
-            <div class="homeText textContainer">
-                <div class="logoContainer">
-                    <div class="logo">
-                        <img src="images/swiftlogo.png" alt="">
+            <div>
+                <ul class="navbar-nav flex-row align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="#home">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">ABOUT</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#life">LIFE INSURANCE</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#notary">NOTARY</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="faFonts d-flex gap-3 flex-row align-items-center justify-content-center">
+                <a href="https://x.com/dannydevelops82" class="fa-brands fa-x-twitter fa-3x"><span class="label"></span></a>
+                <a href="www.linkedin.com/in/daniel-barroso82" class="fa-brands fa-linkedin fa-3x"><span class="label"></span></a>
+                <a href="#" class="fa-brands fa-square-instagram fa-3x"><span class="label"></span></a>
+                <a href="https://github.com/barroso2223" class="fa-brands fa-square-github fa-3x"><span class="label"></span></a>
+            </div>
+            
+        </div> 
+    </nav> 
+    <header id="home" class="gap-3 bg-img d-flex flex-wrap justify-content-between align-items-center text-center">
+        <div class="p-1 mx-3 container lifeContainer">
+            <h1>Life Insurance & IULs</h1>
+            <p>Protect your loved ones and <strong>plan for your future</strong> with Indexed Universal Life (IUL) policies.
+            As an independent agent, I compare top insurers to find you the best coverage at competitive rates.
+            Let’s ensure your family’s financial security today and tomorrow.
+            </p>
+            <p class="d-flex justify-content-center "><a href="#life" class="btn btn-md btn-bg hover-btn fs-2">Learn More</a></p>
+        </div> 
+        <div class="p-1 mx-4 mb-2 container notaryContainer">
+            <h1>Mobile Notary Services</h1>
+            <p>
+            Stress-free mortgage closings at <strong>your convenience</strong> home, office, or even a coffee shop.
+            I guide sellers, buyers, and refinancers through document signing with clarity (no legal advice),
+            ensuring a smooth and secure process for residential, commercial, and reverse mortgages.
+            </p>
+            <p class="d-flex justify-content-center"><a href="#notary" class="btn btn-md btn-bg hover-btn fs-2">Learn More</a></p>
+        </div> 
+    </header>
+        
+    
+    <section class="container-fluid bg-black py-5 text-white" id="about">
+        <div class="container">
+            <h1 class="display-4 text-center mb-5">ABOUT</h1>
+        </div>
+        <div class="row mx-2 text-center">
+            <div class="col-lg-9 col-md-8 col-sm-12">
+                <p class="fs-4">I believe in <strong>helping families navigate life’s critical moments</strong>, whether it’s securing their financial future with life insurance or simplifying the mortgage closing process. With expertise in IULs and mobile notary services, I’m committed to providing personalized, compassionate guidance because everyone deserves peace of mind.</p>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-12">
+                <img src="/images/dannyprofileimg2cropped.jpg" alt="My Image" style="width: 200px;" class="rounded-circle" >
+            </div>
+        </div>
+    </section> 
+    
+    <section class="container-fluid bg-blue p-5 text-white" id="life">
+        <div class="container">
+            <h1 class="display-4 text-center mb-5">LIFE INSURANCE SOLUTIONS</h1>
+        </div>
+        <div class="row flex-wrap">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow">
+                    <div class="card-body">
+                        <h5 class="card-title">Family Protection</h5>
+                            <p class="card-text">
+                            Affordable term or whole life policies to cover funeral costs, debts, and your family’s needs.
+                            </p>
                     </div>
                 </div>
-                <p>Welcome to my website! I'm thrilled to have you here and want to thank you for choosing me for your life insurance needs. This site is designed with your convenience in mind, providing easy access to information about each insurance provider I work with. Simply click on your provider’s page to find their contact details and follow the link(s) to get any questions answered. I'm here to make your experience as seamless and helpful as possible.</p>
             </div>
-        </div>
-    </section> 
-    
-    <section id="american" class="blackBack"> 
-        <h2>American National<br/>Frequently Asked Questions...</h2> 
-        <div class="contactInfo">
-            <a href="tel:+1800-899-6806"><i class="fa fa-phone"></i> Call American National!</a>
-            <a href="mailto:Lisdept@Americannational.com, lnbpolicychangeteam@americannational.com"><i class="fa-sharp fa-regular fa-envelope"></i> Email American National!</a>
-        </div>
-        <div class="serviceGrid">
-            <div  class="serviceCard">
-                <a href="mailto:Lisdept@Americannational.com,lnbpolicychangeteam@americannational.com">
-                <h3>Click to email now</h3>
-                <p>How do I update my Policy information?</p>
-                </a>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow">
+                    <div class="card-body">
+                        <h5 class="card-title">Indexed Universal Life (IUL)</h5>
+                        <p class="card-text">
+                        Grow cash value tax-free while protecting your loved ones. Perfect for retirement planning.
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div  class="serviceCard">
-                <a href="mailto:Lisdept@Americannational.com,lnbpolicychangeteam@americannational.com">
-                <h3>Click to email now</h3>
-                <p>How do I pay extra/less to my monthly premium?</p>
-                </a>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow">
+                    <div class="card-body">
+                        <h5 class="card-title">Final Expense</h5>
+                        <p class="card-text">
+                        Guaranteed acceptance policies with no medical exams for seniors.
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div  class="serviceCard">
-                <a href="mailto:Lisdept@Americannational.com,lnbpolicychangeteam@americannational.com">
-                <h3>Click to email now</h3>
-                <p>How can I change the beneficiary on my policy?</p>
-                </a>
+            <div class="text-center mt-2 mb-4">
+                <a href="#formTabs" class="btn btn-primary btn-lg">Get A Quote</a>
             </div>
-            <div  class="serviceCard">
-                <a href="mailto:Lisdept@Americannational.com,lnbpolicychangeteam@americannational.com">
-                <h3>Click to email now</h3>
-                <p>How can I update the payment method for autopay?</p>
-                </a>
-            </div>
-            <div  class="serviceCard">
-                <a href="mailto:Lisdept@Americannational.com,lnbpolicychangeteam@americannational.com">
-                <h3>Click to email now</h3>
-                <p>How can I change my benefit amount?</p>
-                </a>
-            </div>
-            <div  class="serviceCard">
-                <a href="mailto:Lisdept@Americannational.com,lnbpolicychangeteam@americannational.com">
-                <h3>Click to email now</h3>
-                <p>What is the status of my application?</p>
-                </a>
-            </div>
-            <div  class="serviceCard">
-                <a href="mailto:Lisdept@Americannational.com,lnbpolicychangeteam@americannational.com">
-                <h3>Click to email now</h3>
-                <p>Any other questions not addressed here please reach out to these provided quick links including the telephone links above.</p>
-                </a>
-            </div>
-        </div>
-    </section> 
-    
-    <section id="foresters" class="blackBack"> 
-        <h2>Foresters<br/>Frequently Asked Questions...</h2> 
-        <div class="contactInfo">
-            <a href="tel:+18664667166"><i class="fa fa-phone"></i> Call Foresters! (Inforce Business: option 7, payment services: option 3, claims: option 6)</a>
-            <a href="https://www.securedocs.ca/Portal.aspx?p=492" target="_blank" ><i class="fa fa-comments"></i> Contact Foresters!</a>
-        </div>
-        <div class="serviceGrid">
-            <div  class="serviceCard">
-                <a href="https://www.securedocs.ca/Portal.aspx?p=492 " target="_blank">
-                <h3>Click to contact now</h3>
-                <p>How do I update my Policy information?</p>
-                </a>
-            </div>
-            <div  class="serviceCard">
-                <a href="https://www.securedocs.ca/Portal.aspx?p=492 " target="_blank">
-                <h3>Click to contact now</h3>
-                <p>How do I pay extra/less to my monthly premium?</p>
-                </a>
-            </div>
-            <div  class="serviceCard">
-                <a href="https://www.securedocs.ca/Portal.aspx?p=492 " target="_blank">
-                <h3>Click to contact now</h3>
-                <p>How can I change the beneficiary on my policy?</p>
-                </a>
-            </div>
-            <div  class="serviceCard">
-                <a href="https://www.securedocs.ca/Portal.aspx?p=492 " target="_blank">
-                <h3>Click to contact now</h3>
-                <p>How can I update the payment method for autopay?</p>
-                </a>
-            </div>
-            <div  class="serviceCard">
-                <a href="https://www.securedocs.ca/Portal.aspx?p=492 " target="_blank">
-                <h3>Click to contact now</h3>
-                <p>How can I change my benefit amount?</p>
-                </a>
-            </div>
-            <div  class="serviceCard">
-                <a href="https://www.securedocs.ca/Portal.aspx?p=492 " target="_blank">
-                <h3>Click to contact now</h3>
-                <p>What is the status of my application?</p>
-                </a>
-            </div>
-            <div  class="serviceCard">
-                <a href="https://www.securedocs.ca/Portal.aspx?p=492 " target="_blank">
-                <h3>Click to contact now</h3>
-                <p>Any other questions not addressed here please reach out to these provided quick links including the telephone links above.</p>
-                </a>
-            </div>
-        </div>
-    </section> 
-    
-    <section id="illinois" class="blackBack"> 
-        <h2>Illinois Mutual<br/>Frequently Asked Questions...</h2> 
-        <div class="contactInfo">
-            <a href="tel:+18004377355"><i class="fa-solid fa-phone-square"></i> Call Illinois Mutual! (Policy Support: option 3, Claims: option 4)</a>
-            <a href="https://www.illinoismutual.com/contact-us" target="_blank"><i class="fa-sharp fa-regular fa-envelope"></i>Contact Illinois Mutual!</a>
-        </div>
-        <div class="serviceGrid">
-            <div  class="serviceCard">
-                <a href="https://www.illinoismutual.com/contact-us" target="_blank">
-                <h3>Click to contact now</h3>
-                <p>How do I update my Policy information?</p>
-                </a>
-            </div>
-            <div  class="serviceCard">
-                <a href="https://www.illinoismutual.com/contact-us" target="_blank">
-                <h3>Click to contact now</h3>
-                <p>How do I pay extra/less to my monthly premium?</p>
-                </a>
-            </div>
-            <div  class="serviceCard">
-                <a href="https://www.illinoismutual.com/contact-us" target="_blank">
-                <h3>Click to contact now</h3>
-                <p>How can I change the beneficiary on my policy?</p>
-                </a>
-            </div>
-            <div  class="serviceCard">
-                <a href="https://www.illinoismutual.com/contact-us" target="_blank">
-                <h3>Click to contact now</h3>
-                <p>How can I update the payment method for autopay?</p>
-                </a>
-            </div>
-            <div  class="serviceCard">
-                <a href="https://www.illinoismutual.com/contact-us" target="_blank">
-                <h3>Click to contact now</h3>
-                <p>How can I change my benefit amount?</p>
-                </a>
-            </div>
-            <div  class="serviceCard">
-                <a href="https://www.illinoismutual.com/contact-us" target="_blank">
-                <h3>Click to contact now</h3>
-                <p>What is the status of my application?</p>
-                </a>
-            </div>
-            <div  class="serviceCard">
-                <a href="https://www.illinoismutual.com/contact-us" target="_blank">
-                <h3>Click to contact now</h3>
-                <p>Any other questions not addressed here please reach out to these provided quick links including the telephone links above.</p>
-                </a>
-            </div>
-        </div>
-    </section> 
+            <div class="insurance-badge container text-center d-flex flex-column gap-2 justify-content-center">
+                <h5 class="mb-4">
+                    <i class="fas fa-shield-alt me-2 text-muted"></i>
+                    Need help with an existing policy? Contact your provider directly:
+                </h5>
+                <p class="text-muted small mb-4">
+                    For policy updates, changes, or claims assistance, 
+                    <strong>click your provider below</strong> to access their 
+                    secure portals and direct email.
+                </p>
+                <div class="d-flex flex-wrap justify-content-center gap-4 mt-3">
+                    <div class="d-flex flex-wrap gap-3 justify-content-center">
 
-    <section id="aig" class="blackBack">
-        <h2>AIG Consumer Portal</h2> 
-        <div class="contactInfo">
-            <a href="tel:+18002478837"><i class="fa fa-phone"></i> Call AIG Term/Universal Life!</a>
-            <a href="tel:+18773997747"><i class="fa fa-phone"></i> Call AIG option 6 (GIWL / SIWL)!</a>
-            <a href="https://www.lifeportal.corebridgefinancial.com/life/connext-consumer-portal/public/login#/ " target="_blank"><i class="fa-sharp fa-regular fa-envelope"></i> Email American National!</a>
+                        <a href="mailto:Lisdept@Americannational.com,lnbpolicychangeteam@americannational.com" target="_blank">
+                            <span class="bg-american badge mb-2 cursor-pointer">
+                                <i class="fa-solid fa-envelope"></i> American National</span></a>
+
+                        <a href="https://www.securedocs.ca/Portal.aspx?p=492" target="_blank"><span class="badge bg-foresters mb-2"><i class="fa-solid fa-envelope"></i> Foresters </span></a>
+
+                        <a href="https://www.illinoismutual.com/contact-us" target="_blank"><span class="badge bg-illinois mb-2"><i class="fa-solid fa-envelope"> </i> Illinois Mutual </span></a>
+
+                        <a href="https://www.lifeportal.corebridgefinancial.com/life/connext-consumer-portal/public/login#/" target="_blank"><span class="badge bg-aig mb-2"><i class="fa-solid fa-envelope"> </i> AIG </span></a>
+
+                        <a href="mailto:tii.customerservice@transamerica.com" target="_blank"><span class="badge bg-transamerica mb-2"><i class="fa-solid fa-envelope"> </i> Transamerica </span></a>
+
+                        <a href="mailto:aetna-custservice@life-insurers.com" target="_blank"><span class="badge bg-aetna mb-2"><i class="fa-solid fa-envelope"> </i> AETNA </span></a>
+                    </div>
+                </div>
+            </div>
+            
         </div>
-        <div class="serviceGrid">
-            <div  class="serviceCard">
-                <a href="https://www.lifeportal.corebridgefinancial.com/life/connext-consumer-portal/public/login#/ " target="_blank">
-                <h3>How to create an account?</h3>
-                <p>The following policy owner’s information will be required to create an account:
-                    • Last name • Social Security number or Policy/Contract number • Birth date
-                    We’ll also need your email address and phone number to verify and complete your profile. Click on this link to see guide.<br/>
-                    <a class="link" href="chrome-extension://gphandlahdpffmccakmbngmbjnjiiahp/https://live.cloud.api.corebridgefinancial.com/lnr/dbp-fdm-admin/download/100AicF6FGkgO9MMYvefTIwGZGsAm_KNSon44jQxFLiCuEEIfY1t_DrX2sgGFMsA6OlPeV6hZHw9NcBGLWXNd8F63A" target="_blank">"Registration Guide Link"</a></p>
-                </a>
-            </div>
-            <div  class="serviceCard">
-                <a href="https://www.lifeportal.corebridgefinancial.com/life/connext-consumer-portal/public/login#/ " target="_blank">
-                <h3>For technical support click this tab or call 1-800-280-2011 Monday-Friday</h3>
-                <a href="tel:+18002802011"><i class="fa fa-phone"></i> Call AIG option 6 (GIWL / SIWL)!</a>
-                </a>
-            </div>
-        </div>
-        <h3>What can I do with the AIG Consumer Portal?</h3>
-        <div class="aboutAig serviceGrid">
-            <div  class="serviceCard">
-                <a href="https://www.lifeportal.corebridgefinancial.com/life/connext-consumer-portal/public/login#/ " target="_blank">
-                <h3>View policy
-                    information</h3>
-                <p>
-                    • Policy details
-                    • Beneficiary information
-                    • Address information>View policy
-                    information
-                    • Securely message
-                    Customer Service</p>
-                </a>
-            </div>
-            <div  class="serviceCard">
-                <a href="https://www.lifeportal.corebridgefinancial.com/life/connext-consumer-portal/public/login#/ " target="_blank">
-                <h3>Pay Premiums</h3>
-                <p> • Make one time payments
-                    • Set up automatic recurring payments
-                    • Sign up for e-bill to receive notifications when payments are due
-                    • Elect to receive email notifications when account is past due and in jeopardy of lapsing (grace notice)<br/><span>Payment options not available for all products</span></p>
-                </a>
-            </div>
-            <div  class="serviceCard">
-                <a href="https://www.lifeportal.corebridgefinancial.com/life/connext-consumer-portal/public/login#/ " target="_blank">
-                <h3>Manage Transactions</h3>
-                <p>• Make address Changes
-                    • Make electronic payments
-                    • Access service forms
-                    • Send secure messages to our customer service team</p>
-                </a>
-            </div>
-        </div>
-    </section>
-    <section id="transamerica" class="blackBack">
-        <h2>Transamerica<br/>Frequently Asked Questions...</h2> 
-        <div class="contactInfo">
-            <a href="tel:+18772344848"><i class="fa fa-phone"></i> Call Transamerica! (option 4 policyholder support and claims)</a>
-            <a href="mailto:tii.customerservice@transamerica.com"><i class="fa-sharp fa-regular fa-envelope"></i> Email Transamerica!</a>
-        </div>
-        <div class="serviceGrid">
-            <div  class="serviceCard">
-                <a href="mailto:tii.customerservice@transamerica.com">
-                <h3>Click to email now</h3>
-                <p>How do I update my Policy information?</p>
-                </a>
-            </div>
-            <div  class="serviceCard">
-                <a href="mailto:tii.customerservice@transamerica.com">
-                <h3>Click to email now</h3>
-                <p>How do I pay extra/less to my monthly premium?</p>
-                </a>
-            </div>
-            <div  class="serviceCard">
-                <a href="mailto:tii.customerservice@transamerica.com">
-                <h3>Click to email now</h3>
-                <p>How can I change the beneficiary on my policy?</p>
-                </a>
-            </div>
-            <div  class="serviceCard">
-                <a href="mailto:tii.customerservice@transamerica.com">
-                <h3>Click to email now</h3>
-                <p>How can I update the payment method for autopay?</p>
-                </a>
-            </div>
-            <div  class="serviceCard">
-                <a href="mailto:tii.customerservice@transamerica.com">
-                <h3>Click to email now</h3>
-                <p>How can I change my benefit amount?</p>
-                </a>
-            </div>
-            <div  class="serviceCard">
-                <a href="mailto:tii.customerservice@transamerica.com">
-                <h3>Click to email now</h3>
-                <p>What is the status of my application?</p>
-                </a>
-            </div>
-            <div  class="serviceCard">
-                <a href="mailto:tii.customerservice@transamerica.com">
-                <h3>Click to email now</h3>
-                <p>Any other questions not addressed here please reach out to these provided quick links including the telephone links above.</p>
-                </a>
-            </div>
-        </div>
-    </section>
-    <section id="aetna" class="blackBack">
-        <h2>Aetna<br/>Frequently Asked Questions...</h2> 
-        <div class="contactInfo">
-            <a href="tel:+18004168377"><i class="fa fa-phone"></i> Call Aetna!</a>
-            <a href="mailto:aetna-custservice@life-insurers.com"><i class="fa-sharp fa-regular fa-envelope"></i> Email Aetna!</a>
-        </div>
-        <div class="serviceGrid">
-            <div  class="serviceCard">
-                <a href="mailto:aetna-custservice@life-insurers.com">
-                <h3>Click to email now</h3>
-                <p>How do I update my Policy information?</p>
-                </a>
-            </div>
-            <div  class="serviceCard">
-                <a href="mailto:aetna-custservice@life-insurers.com">
-                <h3>Click to email now</h3>
-                <p>How do I pay extra/less to my monthly premium?</p>
-                </a>
-            </div>
-            <div  class="serviceCard">
-                <a href="mailto:aetna-custservice@life-insurers.com">
-                <h3>Click to email now</h3>
-                <p>How can I change the beneficiary on my policy?</p>
-                </a>
-            </div>
-            <div  class="serviceCard">
-                <a href="mailto:aetna-custservice@life-insurers.com">
-                <h3>Click to email now</h3>
-                <p>How can I update the payment method for autopay?</p>
-                </a>
-            </div>
-            <div  class="serviceCard">
-                <a href="mailto:aetna-custservice@life-insurers.com">
-                <h3>Click to email now</h3>
-                <p>How can I change my benefit amount?</p>
-                </a>
-            </div>
-            <div  class="serviceCard">
-                <a href="mailto:aetna-custservice@life-insurers.com">
-                <h3>Click to email now</h3>
-                <p>What is the status of my application?</p>
-                </a>
-            </div>
-            <div  class="serviceCard">
-                <a href="mailto:aetna-custservice@life-insurers.com">
-                <h3>Click to email now</h3>
-                <p>Any other questions not addressed here please reach out to these provided quick links including the telephone links above.</p>
-                </a>
-            </div>
-        </div>
-    </section>
+    </section> 
     
-    <section id="contact" class="blackBack"> 
-        <h2>Contact Me</h2> 
-        <p>Thank you for visiting my website and for choosing me as your life insurance agent. I hope you found this site helpful and easy to navigate. If you have any additional questions, need further assistance, or are interested in exploring other services, please don't hesitate to reach out to me directly. Your trust and satisfaction are my top priorities, and I'm here to support you every step of the way.</p>
-        <div class="contactInfo">
-            <a href="tel:+17868739593"><i class="fa fa-mobile"></i> Call Me!</a>
-            <a href="SMS:+17868739593"><i class="fa-regular fa-comment"></i> Text Me!</a>
-            <a href="mailto:dannydevelops82@gmail.com"><i class="fa-sharp fa-regular fa-envelope"></i> Email Me!</a>
+    <section id="notary" class="p-5 bg-notary">
+        <div class="container">
+            <h1 class="display-4 text-center mb-5">MOBILE NOTARY SERVICES</h1>
         </div>
-        <div class="form">
-            <div class="myImage formCard">
-                <img src="images/dannyprofileimg2cropped.jpg" alt="">
+        <div class="row">
+            <div class="col-md-6 mb-4 text-start justify-content-center">
+                <h4 class="px-2 fs-4">Why Choose Mobile Notary?</h4>
+                <ul class="list-unstyled fs-6">
+                    <li class="mb-2"><i class="bi bi-check-circle text-primary me-2"></i> <strong>Convenience:</strong> Sign at home, work, or a neutral location.</li>
+                    <li class="mb-2"><i class="bi bi-check-circle text-primary me-2"></i> <strong>Guidance:</strong> I explain each document in plain language.</li>
+                    <li class="mb-2"><i class="bi bi-check-circle text-primary me-2"></i> <strong>Flexible Hours:</strong> Weekends and evenings available.</li>
+                </ul>
             </div>
-            <div class="videoCard formCard">
-                <video class="video7 video" autoplay muted loop playsinline>
-                    <source src="videos/7.mp4" type="video/mp4">
-                </video>
-            </div>
+            <div class="col-md-6 text-center justify-content-center">
+                <h4>Services Offered</h4>
+                <div class="d-flex flex-wrap gap-2">
+                    <span class="badge bg-secondary me-2 mb-2">Purchase Closings</span>
+                    <span class="badge bg-secondary me-2 mb-2">Refinances</span>
+                    <span class="badge bg-secondary me-2 mb-2">Reverse Mortgages</span>
+                    <span class="badge bg-secondary me-2 mb-2">Commercial Loans</span>
+                    <span class="badge bg-secondary me-2 mb-2">Cash Transactions</span>
+                    <span class="badge bg-secondary me-2 mb-2">General Notary</span>
+                </div>
+                <div class="text-center mt-4">
+                    <a href="#formTabs" class="btn btn-primary btn-lg">Book Appointment</a>
+                </div>
+            </div>  
         </div>
-        <div class="faFonts">
-            <a href="https://x.com/dannydevelops82" target="_blank" class="fa-brands fa-x-twitter fa-3x"><span class="label"></span></a>
-			<a href="www.linkedin.com/in/daniel-barroso82" target="_blank" class="fa-brands fa-linkedin fa-3x"><span class="label"></span></a>
-			<a href="#" target="_blank" class="fa-brands fa-square-instagram fa-3x"><span class="label"></span></a>
-			<a href="https://github.com/barroso2223" target="_blank" class="fa-brands fa-square-github fa-3x"><span class="label"></span></a>
+    </section>
+
+    <section id="contact" class="p-5 bg-blue">
+        <div class="container">
+            <h1 class="display-4 text-center mb-5">CONTACT</h1>
+            
+            <!-- Form Selection Tabs -->
+             
+            <h4>Select Form Type:</h4>
+            <ul class="nav nav-pills mb-4 justify-content-center gap-1" id="formTabs" role="tablist">
+                <li class="nav-item form-btn" role="presentation">
+                    <button class="nav-link active" id="insurance-tab" data-bs-toggle="tab" 
+                            data-bs-target="#insurance-form" type="button">Life Insurance Quote</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link form-btn" id="notary-tab" data-bs-toggle="tab" 
+                            data-bs-target="#notary-form" type="button">Mobile Notary Request</button>
+                </li>
+            </ul>
+    
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <!-- Tab Content -->
+                    <div class="tab-content">
+                        <!-- Life Insurance Form -->
+                        <div class="tab-pane fade show active" id="insurance-form">
+                            <form action="https://formsubmit.co/your-insurance-swiftsigningfl@gmail.com" method="POST">
+                                <input type="hidden" name="_subject" value="New Life Insurance Quote Request">
+                                <input type="hidden" name="_template" value="table">
+                                <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html">
+    
+                                <div class="row mb-3">
+                                    <div class="col-md-6 mb-3">
+                                        <input type="text" class="form-control" name="First Name" placeholder="First Name" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <input type="text" class="form-control" name="Last Name" placeholder="Last Name" required>
+                                    </div>
+                                </div>
+    
+                                <div class="row mb-3">
+                                    <div class="col-md-6 mb-3">
+                                        <input type="email" class="form-control" name="Email" placeholder="Email" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <input type="tel" class="form-control" name="Phone" placeholder="Phone" required>
+                                    </div>
+                                </div>
+    
+                                <div class="row mb-3">
+                                    <div class="col-md-4 mb-3">
+                                        <h6>Date of Birth</h6>
+                                        <input type="date" class="form-control" name="DOB" required>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <h6>Legal Gender</h6>
+                                        <select class="form-select" name="Gender" required>
+                                            <option value="" disabled selected>Gender</option>
+                                            <option>Male</option>
+                                            <option>Female</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <h6>Do you smoke?</h6>
+                                        <select class="form-select" name="Tobacco Use" required>
+                                            <option value="" disabled selected>Tobacco Use?</option>
+                                            <option>No</option>
+                                            <option>Yes</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade show active" id="insurance-form">
+                                    <div class="alert alert-light border-blue text-center mb-4">
+                                        <i class="fas fa-map-marker-alt me-2 text-primary"></i>
+                                        Servicing: <strong>In-Person</strong> or <strong>Virtual</strong> Throughout Florida
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100">Get Insurance Quote</button>
+                            </form>
+                        </div>
+    
+                        <!-- Mobile Notary Form -->
+                        <div class="tab-pane fade" id="notary-form">
+                            <form action="https://formsubmit.co/your-notary-swiftsigningfl@gmail.com" method="POST">
+                                <input type="hidden" name="_subject" value="New Mobile Notary Request">
+                                <input type="hidden" name="_template" value="table">
+                                <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html">
+    
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" name="Name" placeholder="Your Name" required>
+                                </div>
+                                
+                                <div class="row mb-3">
+                                    <div class="col-md-6 mb-3">
+                                        <input type="email" class="form-control" name="Email" placeholder="Email" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <input type="tel" class="form-control" name="Phone" placeholder="Phone" required>
+                                    </div>
+                                </div>
+    
+                                <div class="mb-3">
+                                    <select class="form-select" name="Service Type" required>
+                                        <option value="" disabled selected>Service Needed</option>
+                                        <option>Real Estate Transactions</option>
+                                        <option>General Notary</option>
+                                    </select>
+                                </div>
+    
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" name="Signing Address" 
+                                           placeholder="Signing Location Address" required>
+                                </div>
+                                <div class="d-flex gap-2 justify-content-center mb-2 flex-wrap">
+                                    <span class="badge bg-primary">
+                                        <i class="fas fa-map-pin me-1"></i>Miami-Dade
+                                    </span>
+                                    <span class="badge bg-success">
+                                        <i class="fas fa-map-pin me-1"></i>Broward
+                                    </span>
+                                    <span class="badge bg-info">
+                                        <i class="fas fa-map-pin me-1"></i>Palm Beach
+                                    </span>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100">Request Notary Service</button>
+                            </form>
+                        </div>
+                    </div>
+    
+                    <!-- Privacy & CAPTCHA -->
+                    <div class="mt-3">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" required>
+                            <label class="form-check-label small">I agree to the privacy policy</label>
+                        </div>
+                        <div class="cf-turnstile mt-2" data-sitekey="your-cloudflare-site-key"></div>
+                    </div>
+                </div>
+    
+                <!-- Existing Contact Info (Keep This) -->
+                <div class="col-md-6">
+                    <h4>Quick Links</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fa-solid fa-phone"></i> 
+                            <a href="tel:+7868739593" class="text-white">(786) 873-9593</a></li>
+                        <li class="mb-2"><i class="fa-solid fa-envelope"></i> 
+                            <a href="mailto:swiftsigningfl@gmail.com" class="text-white">swiftsigningfl@gmail.com</a></li>
+                        <li class="mb-2"><i class="bi bi-geo-alt me-2"></i> Serving: 
+                            <br>Mobile Notary: South Florida Area 
+                            <br>Life Insurance: All Florida</li>
+                    </ul>
+                    <hr>
+                    <h4>Hours</h4>
+                    <p>Mon-Fri: By Appointment</p>
+                </div>
+            </div>
         </div>
     </section> 
     
     <footer class="bg100"> 
-        <p>&copy; 2024 Daniel Barroso Websites, All rights reserved. The trademarks and trade names used herein are the property of their respective owners.</p> 
+        <p class="fs-6 py-3">&copy; 2022 Daniel Barroso Websites, All rights reserved. The trademarks and trade names used herein are the property of their respective owners.</p> 
     </footer> 
+
+    <!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Cloudflare Turnstile (CAPTCHA) -->
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 </body> 
 </html> 

@@ -50,366 +50,155 @@ body {
     flex-direction: column;
 }
 
-body,
-h1,
-h2,
-h3,
-p { 
-    margin: 0; 
-} 
-
-h1,
-h2 {
-    font-size: clamp(2rem, 4vw, 3rem);
-    font-weight: 600;
-    font-family: var(--ffTheme);
+body, h1, h2, h3, h4, h5, h6 {
+    font-family: "Poppins", serif;
 }
 
-h3,
-h4 {
-    font-size: clamp(1.5rem, 4vw, 2rem);
-    font-weight: 500;
-    font-family: var(--ffTheme);
+/* Custom Styles for navBar */
+.opacity-hover-off {
+    background-color: rgba(0, 0, 0, .7);
+}
+.opacity-hover-off:hover {
+    background-color: rgba(0, 0, 0, 1)
 }
 
-p,
-span,
-a {
-    font-size: clamp(.5rem, 3vw, 1.25rem);
-    font-family: var(--ffTheme);
+.nav-div {
+    padding: 0 5%;
+    overflow: hidden;
 }
 
-h1,
-h2,
-h3 {
-    font-family: var(--ffAccent);
-    font-weight: 900;
-    line-height: 1;
-}
-
-p, 
-span,
-a {
-    font-family: var(--ffAccent);
-}
-
-a {
-    color: var(--clrMain100);
-    text-decoration: none;
-    list-style: none;
-}
-
-#home {
-    width: 100dvw;
+.homelogo {
+    width: 100px;
     height: auto;
     display: flex;
-    flex-direction: column;
-    padding-top: 50px;
-    margin-inline: auto;
-}
-
-header {
-    width: 100dvw;
-    height: 150px;
-}
-
-nav {
-    position: relative;
-}
-
-.navBar {
-    position: fixed;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
     align-items: center;
-    width: 100%;
-    height: auto;
-    background: rgb(0, 0, 0, .8);
-    box-shadow: 5px 5px 20px white;
-    backdrop-filter: blur(15px);
-    padding: 0 1rem;
-    top: 0;
-    z-index: 1000;
+    opacity: .8;
 }
 
-.logoContainerNav {
-    height: auto;
-    width: 200px;
-}
-
-.logo img {
+.homelogo img {
     width: 100%;
     height: 100%;
+    background-size: cover;
+
 }
 
-.navBar ul {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    font-size: clamp(.5rem, 3vw, 1rem);
-    margin-inline: auto;
-}
-
-.navBar a {
-    margin-right: 1rem;
-    text-decoration: none;
-    color: var(--clrTheme400);
-    text-shadow: 5px 5px 25px var(--clrMain100);
-}
-
-.navBar a:hover {
-    color: var(--clrMain100);
-}
-
-.faFonts {
-    display: flex;
-}
-
-.faFonts a {
-    text-shadow: none;
-}
-
-.split {
+.navbar-nav {
     width: 100%;
-    height: auto;
-    display: flex;
-}
-
-#homeVideo,
-.homeText {
-    flex: 1;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    margin-inline: auto;
-    padding-inline: 1rem;
-    margin-block: 3rem;
-}
-
-
-#videoGrid {
-    max-width: 700px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    place-content: center;
-    align-items: center;
-    margin-inline: auto;
     gap: 1rem;
 }
 
-.videoCard {
-    width: clamp(250px, 25vw, 300px);
-    height: clamp(150px, 20vw, 300px);
-    margin: 1rem;
-    overflow: hidden;
-    border-radius: .5rem;
-    box-shadow: 3px 3px 15px var(--clrMain100);
-}
-
-video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.homeText {
-    margin-inline: auto;
-    margin-block: 2rem;
-    padding-right: 3rem;
-}
-
-.logoContainer {
-    margin: auto;
-}
-
-.homeText .logoContainer .logo {
-    width: 200px;
-    margin-inline: auto;
-}
-
-.logoContainer .logo img {
-    width: 100%;
-    height: 100%;
-}
-
-#american,
-#foresters,
-#illinois,
-#aig,
-#transamerica,
-#aetna {
-    width: 100dvw;
-    min-height: 100dvh;
-    margin-inline: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-block: 2rem;
-    text-align: center;
-    position: relative;
-    box-shadow: 5px 5px 20px var(--clrMain100);
-    z-index: 1;
-}
-
-#american::before {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 100%;
-    background: rgb(252, 194, 69);
-    background-image: url("/images/bgImage.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-blend-mode: luminosity;
-    opacity: .5;
-    z-index: -1;
-}
-
-#foresters::before {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 100%;
-    background-color: rgb(92, 48, 80);
-    background-image: url("/images/bgImage2.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-blend-mode: luminosity;
-    opacity: .5;
-    z-index: -1;
-}
-
-#illinois::before {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 100%;
-    background-color: rgb(41, 108, 105);
-    background-image: url("/images/bgImage3.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-blend-mode: luminosity;
-    opacity: .5;
-    z-index: -1;
-}
-
-#aig::before {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 100%;
-    background-color: rgb(44, 64, 137);
-    background-image: url("/images/bgImage4.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-blend-mode: luminosity;
-    opacity: .5;
-    z-index: -1;
-}
-
-#transamerica::before {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 100%;
-    background-color: rgb(9, 9, 9);
-    background-image: url("/images/bgImage5.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-blend-mode: luminosity;
-    opacity: .5;
-    z-index: -1;
-}
-
-#aetna::before {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 100%;
-    background-color: rgb(59, 3, 73);
-    background-image: url("/images/bgImage6.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-blend-mode: luminosity;
-    opacity: .5;
-    z-index: -1;
-}
-
-#contact::before {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 100%;
-    background: url("/images/5.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    opacity: .4;
-    z-index: -1;
-}
-
-.serviceGrid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    width: 95%;
-    padding-inline: 2rem;
-    padding-block: 2rem;
-}
-
-.serviceCard {
-    border: 1px solid var(--clrMain100);
-    border-radius: .5rem;
-    width: auto;
-    height: auto;
-    background: transparent;
-    box-shadow: 5px 5px 20px white;
-    backdrop-filter: blur(15px);
-    padding: 2rem;
-    margin: 1rem;
+.navbar-nav .nav-link {
     color: var(--clrMain100);
-    cursor: pointer;
-}  
-
-#american .serviceCard a:hover {
-    color: var(--americanColor);
-    text-shadow: 2px 2px 10px var(--clrMain100);
+    font-size: .9rem;
 }
 
-#foresters .serviceCard a:hover {
-    color: var(--foresterscolor);
-    text-shadow: 2px 2px 10px var(--clrMain900);
+.navbar-nav .nav-link:hover {
+    background-color: var(--clrTheme400);
+    color: var(--clrMain900);
 }
 
-#illinois .serviceCard a:hover {
-    color: var(--illinoiscolor);
-    text-shadow: 2px 2px 10px var(--clrMain100);
+.faFonts a {
+    color: var(--clrMain100);
+    font-size: 1rem;
 }
 
-#aig .serviceCard a:hover {
-    color: var(--aigcolor);
-    text-shadow: 3px 3px 10px var(--clrMain100);
+.faFonts a:hover {
+    color: var(--clrTheme400);
 }
 
-#transamerica .serviceCard a:hover {
-    color: var(--transamericacolor);
-    text-shadow: 2px 2px 10px var(--clrMain900);
+/* Custom style for header */
+
+.homelogo {
+    width: 100px;
+    height: auto;
+    opacity: .8;
 }
 
-#aetna .serviceCard a:hover {
-    color: var(--aetnacolor);
-    text-shadow: 2px 2px 10px var(--clrMain100);
+.homelogo img {
+    width: 100%;
+    height: 100%;
+}
+.bg-img {
+    background-image: url("/images/homepage.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 100dvh;
 }
 
-.serviceCard h3 {
-    font-size: clamp(1rem, 4vw, 1.5rem);
-    font-weight: 200;
-    margin: .5rem;
+.btn {
+    width: fit-content;
+    font-size: 1rem !important;
+    padding: .5rem 1rem;
+    background-color: var(--clrTheme400);
+    border: none;
 }
 
-section h2 {
-    padding: 2rem;
+.btn:hover {
+    background-color: var(--clrMain100);
+    color: var(--clrTheme400);
+    text-decoration: underline;
+}
+
+.btn-bg {
+    background-color: var(--clrTheme400);
+    color: var(--clrMain100);
+    border: none;
+}
+
+.logo {
+    height: auto;
+    width: 200px;
+}
+
+.btn.hover-btn:hover {
+    background-color: var(--clrMain100);
+    color: var(--clrTheme400);
+    text-decoration: underline;
+}
+
+/* Life and NotarySettings */
+
+.lifeContainer, .notaryContainer {
+    max-width: 500px;
+    color: var(--clrMain100);
+    background-color: rgba(0, 0, 0, .1);
+    text-shadow: 1px 1px 3px var(--clrTheme400);
+    gap: 1rem;
+    border-radius: .5rem;
+    height: auto;
+    backdrop-filter: blur(20px);
+    flex: 1 1 300px;
+    margin-top: 10rem;
+}
+
+/* Life */
+
+.bg-blue {
+    background-color: var(--clrTheme100);
+}
+
+.bg-american {
+    background-color: var(--americanColor);
+}
+
+.bg-foresters {
+    background-color: var(--foresterscolor);
+}       
+
+.bg-illinois {
+    background-color: var(--illinoiscolor);
+}
+
+.bg-aig {
+    background-color: var(--aigcolor);
+}
+
+.bg-transamerica {
+    background-color: var(--transamericacolor);
+}
+
+.bg-aetna {
+    background-color: var(--aetnacolor);
 }
 
 .contactInfo a {
@@ -431,6 +220,10 @@ section h2 {
     text-align: center;
     margin-inline: auto;
     position: relative;
+}
+
+#contact button {
+    border: 1px solid var(--clrMain100);
 }
 
 #contact p {
@@ -469,17 +262,15 @@ section h2 {
 
 #contact .faFonts {
     gap: 1rem;
-    padding: 2rem;
+    padding: 1rem;
     width: 100%;
     height: 50px;
-    position: absolute;
-    bottom: 0;
 }
 
 #contact .faFonts a {
     width: 50px;
     height: 50px;
-    margin: auto;
+    margin-inline: auto;
 
 }
 
@@ -496,6 +287,96 @@ footer {
 @media screen and (max-width: 480px ) {
     body {
         width: 100dvw;
+    }
+
+    #american::before {
+        position: absolute;
+        content: "";
+        top: 10;
+        left: 50;
+        background: rgb(252, 194, 69);
+        background-image: url("/images/small1.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-blend-mode: luminosity;
+        background-position: center;
+        opacity: .5;
+        z-index: -1;
+    }
+    
+    #foresters::before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: rgb(92, 48, 80);
+        background-image: url("/images/small2.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-blend-mode: luminosity;
+        background-position: center;
+        opacity: .5;
+        z-index: -1;
+    }
+    
+    #illinois::before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: rgb(41, 108, 105);
+        background-image: url("/images/small3.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-blend-mode: luminosity;
+        opacity: .5;
+        z-index: -1;
+    }
+    
+    #aig::before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: rgb(44, 64, 137);
+        background-image: url("/images/small4.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-blend-mode: luminosity;
+        background-position: center;
+        opacity: .5;
+        z-index: -1;
+    }
+    
+    #transamerica::before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: rgb(9, 9, 9);
+        background-image: url("/images/small5.png");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-blend-mode: luminosity;
+        opacity: .5;
+        z-index: -1;
+    }
+    
+    #aetna::before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: rgb(59, 3, 73);
+        background-image: url("/images/small6.png");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-blend-mode: luminosity;
+        opacity: .5;
+        z-index: -1;
     }
 
     .navBar {
