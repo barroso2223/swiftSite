@@ -144,6 +144,10 @@ header {
     margin: 0 auto;
 }
 
+.shadow {
+    box-shadow: 10px 10px 20px var(--clrMain100);
+}
+
 .btn {
     width: fit-content;
     font-size: 1rem !important;
