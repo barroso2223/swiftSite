@@ -409,6 +409,14 @@ header {
     color: var(--clrTheme400);
 }
 
+/* Other */
+
+.hover:hover {
+    color: var(--clrTheme400);
+}
+
+/* footer */
+
 footer {
     width: 90%;
     text-align: center;
