@@ -411,9 +411,12 @@ header {
 
 /* Other */
 
-.hover:hover {
-    color: var(--clrTheme400);
-}
+.otherContainer:hover {
+    transform: scale(1.02);
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  }
+  
 
 /* footer */
 
