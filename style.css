@@ -135,49 +135,71 @@ body, h1, h2, h3, h4, h5, h6 {
 /* Mobile Styles */
 
 @media (max-width: 991px) {
-    @media (max-width: 991px) {
-        #navbarNav {
-            position: fixed;
-            top: 75px;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(0, 0, 0, 0.98);
-            opacity: 0;
-            transform: translateY(-20px);
-            transition: opacity 0.3s ease, transform 0.3s ease;
-            visibility: hidden;
-            display: flex !important; /* Changed from block to flex */
-            flex-direction: column;
-            justify-content: center; /* Vertical centering */
-            align-items: center; /* Horizontal centering */
-            overflow-y: auto;
-            font-size: 2rem !important;
-            padding: 20px 0;
-        }
-    
-        #navbarNav.show {
-            opacity: 1;
-            transform: translateY(0);
-            visibility: visible;
-        }
-    
-        /* Add these new rules */
-        .navbar-nav {
-            width: 100%;
-            max-width: 300px; /* Optional: prevent items from stretching too wide */
-            margin: auto; /* Helps with centering */
-        }
-    
-        .nav-item {
-            text-align: center !important;
-            margin: 15px 0;
-        }
-    
-        .nav-link {
-            display: inline-block; /* Better for centering text */
-            padding: 10px 20px !important;
-        }
+    #navbarNav {
+        position: fixed;
+        top: 75px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.98);
+        opacity: 0;
+        transform: translateY(-20px);
+        transition: opacity 0.3s ease, transform 0.3s ease;
+        visibility: hidden;
+        display: flex !important; /* Changed from block to flex */
+        flex-direction: column;
+        justify-content: center; /* Vertical centering */
+        align-items: center; /* Horizontal centering */
+        overflow-y: auto;
+        font-size: 2rem !important;
+        padding: 20px 0;
+    }
+
+    #navbarNav.show {
+        opacity: 1;
+        transform: translateY(0);
+        visibility: visible;
+    }
+
+    /* Add these new rules */
+    .navbar-nav {
+        width: 100%;
+        max-width: 300px; /* Optional: prevent items from stretching too wide */
+        margin: auto; /* Helps with centering */
+    }
+
+    .nav-item {
+        text-align: center !important;
+        margin: 15px 0;
+    }
+
+    .nav-link {
+        display: inline-block; /* Better for centering text */
+        padding: 10px 20px !important;
+    }
+
+    /* Add these new rules */
+    .faFonts.mobile-icons {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1000;
+        background: rgba(0,0,0,0.9);
+        padding: 0 15px;
+    }
+
+    .homelogo.order-1 {
+        margin-right: auto;
+    }
+
+    .navbar-toggler.order-3 {
+        margin-left: auto;
+    }
+
+    /* Adjust existing rules */
+    #navbarNav {
+        top: 75px; /* Match navbar height */
+        z-index: 999;
     }
 }
 
