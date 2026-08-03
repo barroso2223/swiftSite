@@ -341,7 +341,7 @@ select:focus-visible,
   background: none;
   border: 2px solid var(--forest);
   border-radius: 10px;
-  padding: 0.5rem 0.7rem;
+  padding: 0.7rem 0.7rem;
   cursor: pointer;
   flex-shrink: 0;
 }
@@ -375,45 +375,78 @@ select:focus-visible,
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1032px) {
+  .header-inner {
+    position: relative;
+  }
+
   .nav-links {
     display: none;
   }
-  .header-ctas .btn-secondary {
+
+  .header-ctas {
     display: none;
   }
+
   .menu-toggle {
     display: inline-flex;
+    margin-left: auto;
+  }
+
+  /* ONE dropdown instead of two */
+  .site-header.menu-open .nav-primary {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+
+    background: var(--white);
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+    padding: 1.25rem;
+
+    gap: 1rem;
+
+    border-bottom: 1px solid var(--border);
+
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
+    z-index: 999;
   }
 
   .site-header.menu-open .nav-links {
     display: flex;
     flex-direction: column;
+    width: 100%;
     gap: 0;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    background: var(--white);
-    border-bottom: 1px solid var(--border);
-    padding: var(--space-2) var(--space-4) var(--space-4);
+    order: 2;
   }
-  .site-header.menu-open .nav-links a {
-    padding: var(--space-2) 0;
-    border-bottom: 1px solid var(--border);
+
+  .site-header.menu-open .nav-links li {
     width: 100%;
   }
-  .site-header.menu-open .header-ctas {
-    position: absolute;
-    top: calc(100% + 1px);
-    left: 0;
-    right: 0;
-    background: var(--white);
-    flex-direction: column;
-    padding: 0 var(--space-4) var(--space-4);
+
+  .site-header.menu-open .nav-links a {
+    display: block;
+    padding: 0.95rem 0;
+    width: 100%;
+    border-bottom: 1px solid var(--border);
+    font-size: 1rem;
   }
-  .site-header.menu-open .header-ctas .btn-secondary {
-    display: inline-flex;
+
+  .site-header.menu-open .header-ctas {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    order: 1;
+    gap: 0.75rem;
+  }
+
+  .site-header.menu-open .header-ctas .btn {
+    width: 100%;
+    justify-content: center;
   }
 }
 
