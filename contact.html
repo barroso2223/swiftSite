@@ -1,12 +1,21 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-325E6FMEV9"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-325E6FMEV9');
+    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact | Swift Signing Florida</title>
     <meta
       name="description"
-      content="Request a mobile notary appointment or ask a general life insurance question. Serving South Florida for notary work and all of Florida for insurance education."
+      content="Request a mobile notary appointment in South Florida or contact Daniel Barroso with a general life insurance question."
     />
     <link rel="canonical" href="https://swiftsigningfl.com/contact.html" />
     <link rel="icon" href="/images/favicon.ico" />
@@ -42,6 +51,10 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to main content</a>
@@ -57,7 +70,7 @@
             <li><a href="/kids-life-insurance.html">Kids</a></li>
             <li><a href="/about.html">About</a></li>
             <li><a href="/contact.html" aria-current="page">Contact</a></li>
-            <li><a href="/blog/index.html">Blogs</a></li>
+            <li><a href="/blog/index.html">Blog</a></li>
           </ul>
           <div class="header-ctas">
             <a
@@ -101,11 +114,11 @@
       <section class="section-tight">
         <div class="container">
           <div class="privacy-note" data-reveal>
-            <strong>A quick privacy note:</strong> please don't submit Social
-            Security numbers, banking details, medical information, or other
-            highly sensitive personal information through these forms. A
-            licensed agent will collect any sensitive details securely, by phone
-            or through the official application platform, when needed.
+            <strong>A quick privacy note:</strong> Please do not submit Social Security numbers, banking information,
+  detailed medical information, or other highly sensitive personal
+  information through these forms. If additional information is needed,
+  I will contact you directly or direct you to the appropriate secure
+  application or carrier platform.
           </div>
 
           <div class="two-col">
@@ -162,7 +175,7 @@
                 </div>
                 <div class="form-row">
                   <label for="notary-doc-type">Document type</label>
-                  <select id="notary-doc-type" name="documentType">
+                  <select id="notary-doc-type" name="documentType" required>
                     <option value="">Select one</option>
                     <option>Real estate closing</option>
                     <option>Power of attorney</option>
@@ -180,6 +193,7 @@
                     id="notary-location"
                     name="locationTime"
                     rows="3"
+                    required
                   ></textarea>
                 </div>
                 <p id="notary-form-help" class="form-help">
@@ -246,7 +260,7 @@
                 </div>
                 <div class="form-row">
                   <label for="ins-topic">What would you like to discuss?</label>
-                  <select id="ins-topic" name="topic">
+                  <select id="ins-topic" name="topic" required>
                     <option value="">Select one</option>
                     <option>General questions about coverage</option>
                     <option>Life insurance for parents</option>
@@ -258,14 +272,14 @@
                 </div>
                 <div class="form-row">
                   <label for="ins-notes"
-                    >Anything else you'd like us to know?</label
+                    >Anything else you'd like me to know?</label
                   >
                   <textarea id="ins-notes" name="notes" rows="3"></textarea>
                 </div>
                 <p id="insurance-form-help" class="form-help">
-                  This form is for general questions only. Please do not include
-                  medical or financial details here — a licensed agent will
-                  follow up to discuss specifics securely.
+                  This form is for general questions only. Please do not include medical,
+  financial, or other sensitive personal information. I will follow up
+  directly if additional details are needed.
                 </p>
                 <button type="submit" class="btn btn-primary btn-block">
                   Send Question
@@ -278,38 +292,60 @@
       </section>
 
       <section class="section-sage">
-        <div class="container two-col">
-          <div data-reveal>
-            <h2>Quick Links</h2>
-            <p>
-              <a href="tel:+17868739593">(786) 873-9593</a><br />
-              <a href="mailto:swiftsigningfl@gmail.com"
-                >swiftsigningfl@gmail.com</a
-              >
-            </p>
-            <p>
-              Serving:<br />Mobile Notary — South Florida<br />Life Insurance —
-              All of Florida
-            </p>
-          </div>
-          <div data-reveal>
-            <h2>Hours</h2>
-            <p>
-              Appointments are scheduled based on availability. Evening and
-              weekend appointments may be available by advance request.
-            </p>
-            <h2 class="mt-6">Existing Policyholders</h2>
-            <p>
-              For billing changes, beneficiary updates, claims, policy
-              documents, or other service involving an existing policy, contact
-              the issuing insurance carrier through the phone number or secure
-              customer portal listed in your policy documents. You may also
-              contact Daniel if you need help identifying the appropriate
-              carrier contact information.
-            </p>
-          </div>
-        </div>
-      </section>
+  <div class="container two-col">
+    <div data-reveal>
+      <h2>Need Help? Let's Talk.</h2>
+
+      <p class="contact-links">
+        <a href="tel:+17868739593">(786) 873-9593</a><br />
+        <a href="mailto:swiftsigningfl@gmail.com">
+          swiftsigningfl@gmail.com
+        </a>
+      </p>
+
+      <h3>Service Areas</h3>
+
+      <p>
+        <strong>Mobile Notary</strong><br />
+        Serving Broward, Miami-Dade, and Palm Beach Counties, subject
+        to availability.
+      </p>
+
+      <p>
+        <strong>Life Insurance</strong><br />
+        Licensed in Florida and New York. Assistance may be available
+        in other states where licensing, carrier appointments, and
+        product availability permit.
+      </p>
+    </div>
+
+    <div data-reveal>
+      <h2>Appointment Availability</h2>
+
+      <p>
+        Appointments are scheduled by request and based on availability.
+        Evening and weekend appointments may be available. Any applicable
+        travel, convenience, or after-hours fee will be quoted before your
+        appointment is confirmed.
+      </p>
+
+      <h2 class="mt-6">Existing Policyholders</h2>
+
+      <p>
+        For billing questions, beneficiary updates, claims, policy
+        documents, or other account changes, contact the issuing insurance
+        carrier using the telephone number or secure customer portal listed
+        in your policy documents.
+      </p>
+
+      <p>
+        If you're unsure which carrier issued your policy or need help
+        locating the appropriate contact information, reach out and I'll
+        be happy to point you in the right direction.
+      </p>
+    </div>
+  </div>
+</section>
     </main>
 
     <footer class="site-footer">
@@ -331,7 +367,7 @@
               <li>
                 <a href="/kids-life-insurance.html">Kids Life Insurance</a>
               </li>
-              <li><a href="/blog/index.html">Blogs</a></li>
+              <li><a href="/blog/index.html">Blog</a></li>
               <li><a href="/about.html">About</a></li>
             </ul>
           </div>
@@ -345,8 +381,8 @@
                 >
               </li>
               <li>Mobile Notary: Broward, Miami-Dade & Palm Beach (by appointment)</li>
-<li>Life Insurance: Licensed in Florida & New York • Serving clients nationwide</li>
-<li>Appointments available by request, including evenings and weekends</li>
+              <li>Life Insurance: Licensed in Florida & New York • Serving clients nationwide where licensing, carrier appointments, and product availability permit.</li>
+              <li>Evening and weekend appointments may be available by request</li>
             </ul>
           </div>
           <div>
@@ -361,10 +397,11 @@
           </div>
         </div>
         <div class="footer-bottom">
-          <span
-            >&copy; <span >2019</span> Swift Signing Florida.
-            All rights reserved.</span
-          >
+          <div class="footer-bottom">
+  <span>
+    &copy; 2019–<span data-current-year>2026</span> Swift Signing Florida. All rights reserved.
+  </span>
+</div>
           <!-- <div class="social-placeholders">
             <a href="#" aria-label="[SOCIAL LINK: Facebook]">f</a>
             <a href="#" aria-label="[SOCIAL LINK: Instagram]">i</a>

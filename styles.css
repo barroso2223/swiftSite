@@ -82,6 +82,37 @@ body {
   overflow-x: hidden;
 }
 
+/* Trust list icons */
+
+.trust-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 2rem;
+}
+
+.trust-list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.trust-list i {
+  color: var(--gold);
+  width: 26px;
+  font-size: 1.35rem;
+  flex-shrink: 0;
+}
+
+.trust-list svg {
+  width: 22px;
+  height: 22px;
+  color: #c8a15a;
+  flex-shrink: 0;
+}
+
 /* Safety net: keep any unexpectedly long word/URL from forcing horizontal scroll */
 h1,
 h2,
@@ -554,7 +585,18 @@ select:focus-visible,
   border-radius: var(--radius-card);
   padding: var(--space-4);
   box-shadow: var(--shadow-soft);
+  height: fit-content;
+  margin: auto;
+}
+
+.card-fixed {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  padding: var(--space-4);
+  box-shadow: var(--shadow-soft);
   height: 100%;
+  margin: auto;
 }
 .card h3 {
   margin-bottom: var(--space-2);
@@ -745,6 +787,8 @@ select:focus {
   padding: var(--space-4);
   font-size: 0.92rem;
   color: var(--charcoal);
+  height: fit-content;
+  margin: auto;
 }
 .disclaimer-block h3 {
   font-size: 1rem;
@@ -1232,6 +1276,10 @@ fieldset.form-row legend {
   box-shadow: var(--shadow-soft);
 }
 
+.blog-card:hover {
+  transform: translate(-6px);
+}
+
 .blog-card h2 {
   margin-top: var(--space-3);
   font-size: 1.35rem;
@@ -1275,3 +1323,65 @@ fieldset.form-row legend {
   }
 }
 
+/* Optional additions for the two new blog articles */
+.video-heading {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.video-heading i {
+  color: var(--gold);
+  flex-shrink: 0;
+}
+
+.table-scroll {
+  max-width: 100%;
+  margin-block: 1.5rem;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+}
+
+.table-scroll table {
+  width: 100%;
+  min-width: 720px;
+  border-collapse: collapse;
+  background: var(--white);
+}
+
+.table-scroll th,
+.table-scroll td {
+  padding: 0.9rem 1rem;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid var(--border);
+}
+
+.table-scroll thead th {
+  background: var(--sage-light);
+  color: var(--forest);
+}
+
+.table-scroll tbody tr:last-child th,
+.table-scroll tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.comparison-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-block: 1.5rem;
+}
+
+.comparison-cards .card {
+  height: 100%;
+}
+
+@media (max-width: 800px) {
+  .comparison-cards {
+    grid-template-columns: 1fr;
+  }
+}

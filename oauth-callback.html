@@ -1,28 +1,46 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-325E6FMEV9"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-325E6FMEV9");
+    </script>
     <title>Connection Successful</title>
     <style>
-        body { 
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 50px;
-        }
-        .checkmark {
-            color: #4CAF50;
-            font-size: 50px;
-        }
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        padding: 50px;
+      }
+      .checkmark {
+        color: #4caf50;
+        font-size: 50px;
+      }
     </style>
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
     <div class="checkmark">✓</div>
     <h2>Connection Established!</h2>
     <p>You can safely close this window.</p>
     <script>
-        // Automatically close after 3 seconds
-        setTimeout(() => {
-            window.close();
-        }, 3000);
+      // Automatically close after 3 seconds
+      setTimeout(() => {
+        window.close();
+      }, 3000);
     </script>
-</body>
+  </body>
 </html>

@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function () {
      New York residents. This widget requires a state selection before
      activating the button: non-NY states link out to the Ethos
      application in a new tab; New York routes to the contact form so
-     a licensed agent can help directly. */
+     Contact me and I can help directly. */
   document
     .querySelectorAll("[data-state-gate-select]")
     .forEach(function (select) {
