@@ -190,4 +190,24 @@ document.addEventListener("DOMContentLoaded", function () {
   document.querySelectorAll("[data-current-year]").forEach(function (el) {
     el.textContent = new Date().getFullYear();
   });
+
+  /* =========================================================
+   ETHOS OUTBOUND CLICK TRACKING
+   ========================================================= */
+
+  document.querySelectorAll(".ethos-link").forEach(function (link) {
+    link.addEventListener("click", function () {
+      var location = link.dataset.ethosLocation || "unknown";
+      var pagePath = window.location.pathname;
+
+      if (typeof gtag === "function") {
+        gtag("event", "ethos_quote_click", {
+          link_url: link.href,
+          link_location: location,
+          page_path: pagePath,
+          page_title: document.title,
+        });
+      }
+    });
+  });
 });
