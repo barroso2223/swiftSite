@@ -200,6 +200,8 @@ document.addEventListener("DOMContentLoaded", function () {
       var location = link.dataset.ethosLocation || "unknown";
       var pagePath = window.location.pathname;
 
+      console.log("Ethos click:", location, pagePath);
+
       if (typeof gtag === "function") {
         gtag("event", "ethos_quote_click", {
           link_url: link.href,
