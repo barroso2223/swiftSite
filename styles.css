@@ -271,9 +271,10 @@ select:focus-visible,
 }
 
 .btn-secondary {
-  background: transparent;
+  background: var(--cream);
   border-color: var(--gold);
-  color: var(--white);
+  border-width: 1px;
+  color: var(--forest);
 }
 .btn-secondary:hover {
   background: var(--gold-tint);
